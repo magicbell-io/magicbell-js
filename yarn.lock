@@ -5127,12 +5127,13 @@ abab@^2.0.6:
   resolved "https://registry.yarnpkg.com/abab/-/abab-2.0.6.tgz#41b80f2c871d19686216b82309231cfd3cb3d291"
   integrity sha512-j2afSsaIENvHZN2B8GOpF566vZ5WVk5opAiMTvWgaQT8DkbOqsTfvNAvHoRGU2zzP8cPoqys+xHTRDWW8L+/BA==
 
-ably@^1.2.48:
-  version "1.2.48"
-  resolved "https://registry.yarnpkg.com/ably/-/ably-1.2.48.tgz#8095fb8ab031df64ed53c23198439f6760579ce6"
-  integrity sha512-/4HaZR4lu5D60twKN6dQIunxtKJCfcz0a+fuiFWxgqgXMMTiyoChg+IARx1xBK1ZZL3UZ/xdrpml0WBAsu/ZJQ==
+ably@^2.0.1:
+  version "2.0.1"
+  resolved "https://registry.yarnpkg.com/ably/-/ably-2.0.1.tgz#db82e3b2d590108189ed41159c298faff21b4d9c"
+  integrity sha512-ZosxyitZDHlG7ffWAV1PTTX14nHpaAr9dD2zApGHq4Y9oVtY74g9wOIwYsA95+9mMFWLbMqnc+R4HY1zOlTxqg==
   dependencies:
     "@ably/msgpack-js" "^0.4.0"
+    fastestsmallesttextencoderdecoder "^1.0.22"
     got "^11.8.5"
     ws "^8.14.2"
 
@@ -9172,6 +9173,11 @@ fastest-stable-stringify@^2.0.2:
   version "2.0.2"
   resolved "https://registry.yarnpkg.com/fastest-stable-stringify/-/fastest-stable-stringify-2.0.2.tgz#3757a6774f6ec8de40c4e86ec28ea02417214c76"
   integrity sha512-bijHueCGd0LqqNK9b5oCMHc0MluJAx0cwqASgbWMvkO01lCYgIhacVRLcaDz3QnyYIRNJRDwMb41VuT6pHJ91Q==
+
+fastestsmallesttextencoderdecoder@^1.0.22:
+  version "1.0.22"
+  resolved "https://registry.yarnpkg.com/fastestsmallesttextencoderdecoder/-/fastestsmallesttextencoderdecoder-1.0.22.tgz#59b47e7b965f45258629cc6c127bf783281c5e93"
+  integrity sha512-Pb8d48e+oIuY4MaM64Cd7OW1gt4nxCHs7/ddPPZ/Ic3sg8yVGM7O9wDvZ7us6ScaUupzM+pfBolwtYhN1IxBIw==
 
 fastq@^1.6.0:
   version "1.13.0"
