@@ -23,7 +23,7 @@
   },
   "devDependencies": {
     "@angular/core": "^13.4.0",
-    "@magicbell/embeddable": "3.3.18",
+    "@magicbell/embeddable": "3.3.19",
     "@magicbell/magicbell-react": "10.10.2",
     "@magicbell/react-headless": "4.5.1",
     "@types/react": "^18.2.42",

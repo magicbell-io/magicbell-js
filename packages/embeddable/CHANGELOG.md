@@ -1,5 +1,13 @@
 # @magicbell/embeddable
 
+## 3.3.19
+
+### Patch Changes
+
+- [`50551c9`](https://github.com/magicbell-io/magicbell-js/commit/50551c90eb0ad113cdcace75ee04550d07740972) Thanks [@renovate[bot]](https://github.com/renovate%5Bbot%5D)! - Updated dependencies:
+
+  - updated `preact` to `^10.20.1`.
+
 ## 3.3.18
 
 ### Patch Changes
