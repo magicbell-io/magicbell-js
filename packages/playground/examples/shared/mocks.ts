@@ -168,9 +168,7 @@ const fakeNotifications = {
 };
 
 addHandler('get', '/notifications', ({ params }) => {
-  const category = Array.isArray(params.categories)
-    ? params.categories[Math.floor(Math.random() * params.categories.length)]
-    : null;
+  const category: any = params.category || null;
 
   let notifications = fakeNotifications[category] || fakeNotifications.latest;
 

@@ -3,8 +3,8 @@ import React from 'react';
 
 const stores = [
   { id: 'default', defaultQueryParams: {} },
-  { id: 'unread', defaultQueryParams: { read: true } },
-  { id: 'billing', defaultQueryParams: { categories: ['billing'] } },
+  { id: 'unread', defaultQueryParams: { read: false } },
+  { id: 'billing', defaultQueryParams: { category: 'billing' } },
 ];
 
 const tabs = [

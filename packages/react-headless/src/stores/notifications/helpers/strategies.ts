@@ -7,10 +7,6 @@ function eq(value, other) {
   return value === other || (value !== value && other !== other);
 }
 
-function ensureArray(value) {
-  return Array.isArray(value) ? value : String(value).split(',');
-}
-
 export type NotificationCompareStrategy = (
   notification: IRemoteNotification,
   context: Record<string, unknown>,
@@ -41,9 +37,8 @@ export function objMatchesContext(
       (attr === 'read' && !comparator(!isNil(notification.readAt), condition)) ||
       (attr === 'seen' && !comparator(!isNil(notification.seenAt), condition)) ||
       (attr === 'archived' && !comparator(!isNil(notification.archivedAt), condition)) ||
-      (attr === 'categories' &&
-        ensureArray(condition).every((category) => !comparator(notification.category, category))) ||
-      (attr === 'topics' && ensureArray(condition).every((topic) => !comparator(notification.topic, topic))) ||
+      (attr === 'category' && !comparator(notification.category, condition)) ||
+      (attr === 'topic' && !comparator(notification.topic, condition)) ||
       (Object.hasOwnProperty.call(notification, attr) && !comparator(notification[attr], condition))
     ) {
       diff.push(attr);

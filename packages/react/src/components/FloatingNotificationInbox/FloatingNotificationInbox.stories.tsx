@@ -21,7 +21,7 @@ const Component = ({
 }) => (
   <div className="flex flex-row justify-center p-4">
     <MagicBellProvider apiKey={apiKey} userEmail={userEmail} userKey={userKey} theme={theme} stores={stores}>
-      <MagicBell {...props}>
+      <MagicBell {...(props as any)}>
         {(props) => (
           <FloatingNotificationInbox
             onAllRead={onAllRead}
@@ -160,7 +160,7 @@ export const WithSplitInbox = merge(Default, {
     stores: [
       { id: 'default', defaultQueryParams: {} },
       { id: 'unread', defaultQueryParams: { read: true } },
-      { id: 'billing', defaultQueryParams: { categories: ['billing'] } },
+      { id: 'billing', defaultQueryParams: { category: 'billing' } },
     ],
     tabs: [
       { storeId: 'default', label: 'Latest' },

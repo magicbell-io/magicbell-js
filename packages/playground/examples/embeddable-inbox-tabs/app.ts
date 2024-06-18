@@ -7,8 +7,8 @@ const options = {
   height: 500,
   stores: [
     { id: 'default', defaultQueryParams: {} },
-    { id: 'unread', defaultQueryParams: { read: true } },
-    { id: 'billing', defaultQueryParams: { categories: ['billing'] } },
+    { id: 'unread', defaultQueryParams: { read: false } },
+    { id: 'billing', defaultQueryParams: { category: 'billing' } },
   ],
   tabs: [
     { storeId: 'default', label: 'Latest' },

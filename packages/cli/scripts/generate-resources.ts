@@ -420,7 +420,7 @@ async function createResourceIndex(resources: Resource[]) {
 }
 
 async function main() {
-  const resources = await getResources(argv.spec || SPEC_URL);
+  const resources = await getResources(SPEC_URL);
 
   const projectResources = filterResourcesMethods(resources, (method) =>
     hasHeader(method, { name: 'x-magicbell-api-secret', required: true }),

@@ -15,8 +15,8 @@ type StoreConfig = {
     read?: boolean;
     seen?: boolean;
     archived?: boolean;
-    categories?: string[];
-    topics?: string[];
+    category?: string;
+    topic?: string;
     [key: string]: unknown;
   };
   defaults?: Partial<Omit<INotificationStore, 'context'>>;

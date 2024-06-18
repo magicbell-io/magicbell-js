@@ -12,7 +12,7 @@ export class AppComponent implements AfterViewInit {
     const stores = [
       { id: 'default', defaultQueryParams: {} },
       { id: 'unread', defaultQueryParams: { read: true } },
-      { id: 'billing', defaultQueryParams: { categories: ['billing'] } },
+      { id: 'billing', defaultQueryParams: { category: 'billing' } },
     ];
 
     const tabs = [

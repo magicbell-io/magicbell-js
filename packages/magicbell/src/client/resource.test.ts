@@ -128,14 +128,13 @@ test('methods dont put categories and topics in query params if they hold object
   expect(await spy.lastRequest.json()).toEqual({ fake: { topics: [{ slug: 'issue.3' }] } });
   expect(spy.lastRequest.url.search).toEqual('');
 
-  await fakeResource.post({ categories: ['comments'] });
-
+  await fakeResource.post({ category: 'comments' });
   expect(await spy.lastRequest.text()).toEqual('');
-  expect(spy.lastRequest.url.search).toEqual('?categories=comments');
+  expect(spy.lastRequest.url.search).toEqual('?category=comments');
 
-  await fakeResource.post({ topics: ['issue.3', 'issue.4'] });
+  await fakeResource.post({ topic: 'issue.3' });
   expect(await spy.lastRequest.text()).toEqual('');
-  expect(spy.lastRequest.url.search).toEqual('?topics=issue.3%2Cissue.4');
+  expect(spy.lastRequest.url.search).toEqual('?topic=issue.3');
 });
 
 test('single resource methods are not iterable', async () => {

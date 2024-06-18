@@ -34,10 +34,10 @@ notifications
     'A filter on the notifications based on the seen state. Specify false to select unseen notifications. Defaults to null.',
   )
   .option(
-    '--categories <string...>',
+    '--category <string>',
     'A filter on the notifications based on the category. If you want to get uncategorized notifications, use the "uncategorized" value.',
   )
-  .option('--topics <string...>', 'A filter on the notifications based on the topic.')
+  .option('--topic <string>', 'A filter on the notifications based on the topic.')
   .action(async (opts, cmd) => {
     const { data, options } = parseOptions(opts);
 
@@ -61,10 +61,10 @@ notifications
     'A filter on the notifications based on the seen state. Specify false to select unseen notifications. Defaults to null.',
   )
   .option(
-    '--categories <string...>',
+    '--category <string>',
     'A filter on the notifications based on the category. If you want to get uncategorized notifications, use the "uncategorized" value.',
   )
-  .option('--topics <string...>', 'A filter on the notifications based on the topic.')
+  .option('--topic <string>', 'A filter on the notifications based on the topic.')
   .action(async (opts, cmd) => {
     const { data, options } = parseOptions(opts);
 
@@ -115,10 +115,10 @@ notifications
     'A filter on the notifications based on the archived state. If false, only unarchived notifications will be returned. Defaults to null.',
   )
   .option(
-    '--categories <string...>',
+    '--category <string>',
     'A filter on the notifications based on the category. If you want to get uncategorized notifications, use the "uncategorized" value.',
   )
-  .option('--topics <string...>', 'A filter on the notifications based on the topic.')
+  .option('--topic <string>', 'A filter on the notifications based on the topic.')
   .option('--paginate', 'Make additional HTTP requests to fetch all pages of results')
   .option('--max-items <number>', 'Maximum number of items to fetch', Number)
   .action(async ({ paginate, maxItems, ...opts }, cmd) => {
