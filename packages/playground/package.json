@@ -27,9 +27,9 @@
     "@magicbell/magicbell-react": "10.11.4",
     "@magicbell/react-headless": "4.5.4",
     "@types/react": "^18.2.42",
-    "eslint-config-next": "12.3.4",
+    "eslint-config-next": "14.2.4",
     "eslint-plugin-jsx-a11y": "^6.8.0",
-    "eslint-plugin-vue": "^8.2.0",
+    "eslint-plugin-vue": "^9.26.0",
     "next-remote-watch": "^1.0.0"
   }
 }
