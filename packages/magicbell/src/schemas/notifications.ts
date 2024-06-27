@@ -25,25 +25,17 @@ export const MarkAllReadNotificationsPayloadSchema = {
       type: 'boolean',
     },
 
-    categories: {
-      title: 'categories',
+    category: {
+      title: 'category',
       description:
-        'A filter on the notifications based on the category. If you want to get uncategorized notifications, use the "uncategorized" value.\nThe value can be either an array of strings or a comma-separated string.',
-      type: 'array',
-
-      items: {
-        type: 'string',
-      },
+        'A filter on the notifications based on the category. If you want to get uncategorized notifications, use the "uncategorized" value.',
+      type: 'string',
     },
 
-    topics: {
-      title: 'topics',
+    topic: {
+      title: 'topic',
       description: 'A filter on the notifications based on the topic.',
-      type: 'array',
-
-      items: {
-        type: 'string',
-      },
+      type: 'string',
     },
   },
 
@@ -77,25 +69,17 @@ export const MarkAllSeenNotificationsPayloadSchema = {
       type: 'boolean',
     },
 
-    categories: {
-      title: 'categories',
+    category: {
+      title: 'category',
       description:
-        'A filter on the notifications based on the category. If you want to get uncategorized notifications, use the "uncategorized" value.\nThe value can be either an array of strings or a comma-separated string.',
-      type: 'array',
-
-      items: {
-        type: 'string',
-      },
+        'A filter on the notifications based on the category. If you want to get uncategorized notifications, use the "uncategorized" value.',
+      type: 'string',
     },
 
-    topics: {
-      title: 'topics',
+    topic: {
+      title: 'topic',
       description: 'A filter on the notifications based on the topic.',
-      type: 'array',
-
-      items: {
-        type: 'string',
-      },
+      type: 'string',
     },
   },
 
@@ -334,25 +318,17 @@ export const ListNotificationsPayloadSchema = {
       type: 'boolean',
     },
 
-    categories: {
-      title: 'categories',
+    category: {
+      title: 'category',
       description:
-        'A filter on the notifications based on the category. If you want to get uncategorized notifications, use the "uncategorized" value.\nThe value can be either an array of strings or a comma-separated string.',
-      type: 'array',
-
-      items: {
-        type: 'string',
-      },
+        'A filter on the notifications based on the category. If you want to get uncategorized notifications, use the "uncategorized" value.',
+      type: 'string',
     },
 
-    topics: {
-      title: 'topics',
+    topic: {
+      title: 'topic',
       description: 'A filter on the notifications based on the topic.',
-      type: 'array',
-
-      items: {
-        type: 'string',
-      },
+      type: 'string',
     },
   },
 

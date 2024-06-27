@@ -1,4 +1,4 @@
-import { isArray, isBoolean, isObject, isString, isStringArray } from '../lib/utils';
+import { isArray, isBoolean, isObject, isString } from '../lib/utils';
 import { isOptionsHash } from './options';
 import { ClientOptions, RequestMethod } from './types';
 
@@ -20,8 +20,8 @@ const queryParamValidators = {
   archived: isBoolean,
   read: isBoolean,
   seen: isBoolean,
-  categories: (value) => isString(value) || isStringArray(value),
-  topics: (value) => isString(value) || isStringArray(value),
+  category: isString,
+  topic: isString,
 };
 
 function isForcedQueryParams(object) {
@@ -35,7 +35,7 @@ function isForcedQueryParams(object) {
 }
 
 function getUrl(path: string, params: Record<string, string>, options = { encode: true }) {
-  return path.replace(/{([\s\S]+?)}/g, ($0, $1) =>
+  return path.replace(/{([\s\S]+?)}/g, (_, $1) =>
     options.encode ? encodeURIComponent(params[$1] || '') : params[$1] || '',
   );
 }

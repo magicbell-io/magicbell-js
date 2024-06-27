@@ -57,7 +57,7 @@ export const SplitInbox = merge(Default, {
     stores: [
       { id: 'default', defaultQueryParams: {} },
       { id: 'unread', defaultQueryParams: { read: true } },
-      { id: 'billing', defaultQueryParams: { categories: ['billing'] } },
+      { id: 'billing', defaultQueryParams: { category: 'billing' } },
     ],
     tabs: [
       { storeId: 'default', label: 'Latest' },

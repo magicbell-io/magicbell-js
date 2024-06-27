@@ -8,7 +8,7 @@ import { renderWidget } from '@magicbell/embeddable/dist/magicbell.esm.js';
 const stores = [
   { id: 'default', defaultQueryParams: {} },
   { id: 'unread', defaultQueryParams: { read: true } },
-  { id: 'billing', defaultQueryParams: { categories: ['billing'] } },
+  { id: 'billing', defaultQueryParams: { category: 'billing' } },
 ];
 
 const tabs = [

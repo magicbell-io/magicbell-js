@@ -16,14 +16,14 @@ export type QueryParams = {
    */
   archived?: boolean;
   /**
-   * A filter on the notifications based on category. Use "uncategorized" to
+   * A filter on the notifications based on category. Use "uncategorized"
    * to target notifications without a category.
    */
-  categories?: string[];
+  category?: string;
   /**
    * A filter on the notifications based on topic.
    */
-  topics?: string[];
+  topic?: string;
   /**
    * A limit on the number of notifications to be returned.
    */

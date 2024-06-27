@@ -159,8 +159,8 @@ test('can render with a custom notification preferences component', async () => 
 test('can render with multiple inbox tabs, and active tab changes when clicked', async () => {
   const stores = [
     { id: 'default', defaultQueryParams: {} },
-    { id: 'comments', defaultQueryParams: { read: true, categories: ['comments'] } },
-    { id: 'billing', defaultQueryParams: { categories: ['billing'] } },
+    { id: 'comments', defaultQueryParams: { read: true, category: 'comments' } },
+    { id: 'billing', defaultQueryParams: { category: 'billing' } },
   ];
 
   const tabs = [
@@ -185,7 +185,7 @@ test('can render with multiple inbox tabs, and active tab changes when clicked',
 test('renders notifications matching selected tab', async () => {
   const stores = [
     { id: 'default', defaultQueryParams: {} },
-    { id: 'comments', defaultQueryParams: { read: true, categories: ['comments'] } },
+    { id: 'comments', defaultQueryParams: { read: true, category: 'comments' } },
   ];
 
   const tabs = [
@@ -198,7 +198,7 @@ test('renders notifications matching selected tab', async () => {
     notifications: [
       {
         ...fake.notification,
-        content: `notification in ${req.url.searchParams.get('categories') || 'default'} tab`,
+        content: `notification in ${req.url.searchParams.get('category') || 'default'} tab`,
       },
     ],
   }));
